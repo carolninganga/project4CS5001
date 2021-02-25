@@ -12,21 +12,26 @@ def init_man(x, y, scale):
     head = gr.Circle( gr.Point ( x+scale*10, y-scale*50), 20*scale)  
 
     # arms : Create a rectangle 
-    arms = gr.Rectangle( gr.Point ( x+scale*120, y), gr.Point(x-scale*80, y-scale*30 ))
+    arms = gr.Rectangle( gr.Point ( x+scale*110, y), gr.Point(x-scale*80, y-scale*30 ))
 
     # stomach : Create a rectangle 
-    stomach = gr.Rectangle( gr.Point ( x+scale*40, y+scale*20), gr.Point(x-scale*50, y-scale*50 ))
+    stomach = gr.Rectangle( gr.Point ( x+scale*70, y+scale*60), gr.Point(x-scale*50, y ))
 
     # # leg2 : Create a rectangle 
-    # leg1 = gr.Rectangle( gr.Point ( 10, 10), gr.Point(40, 160 ))
+    leg1 = gr.Rectangle( gr.Point ( 10, 10), gr.Point(40, 160 ))
 
     #   # leg2 : Create a rectangle 
     # leg2 = gr.Rectangle( gr.Point ( 40, 40), gr.Point(60, 160 ))
 
 
-    man = [ head, arms, stomach ]
+    man = [ head, arms, leg1, stomach ]
 
     return man
+
+def init_mountain(x, y, scale):
+    # triangle 
+
+    return mountain
 
 def main(): 
 
